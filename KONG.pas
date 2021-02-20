@@ -1,17 +1,15 @@
-﻿program KONG;
+program qqq;
+var x :LongWord = 10;
+ m:longword;
+Function LCM:LongWord;
 
-var
-  x: longword = 10;
-  m:real;
-function rand:longword;
-begin
-  m:=(exp(32*ln(2)));
-  m:=round(m);
-  x:=(1664525*x+1013904223) mod m;
-  rand:=x;
-end;
+Begin
+  m:=trunc(exp(16*ln(2)));
+  x:= (1664525*x+1013904223) mod m;
+  LCM:= x;
+End;
 
 
-begin
-  writeln(rand);  
-end.
+Begin
+writeln(LCM)
+End.
